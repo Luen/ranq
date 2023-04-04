@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockclimbers Association of North Queensland (RANQ)</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .header {
+        text-align: center;
+        padding: 50px;
+        background-color: #f40;
+        color: white;
+        font-size: 30px;
+    }
+
+    .content {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .membership {
+        display: inline-block;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #f40;
+        border-radius: 5px;
+        background-color: white;
+        width: 200px;
+        text-align: center;
+    }
+
+    .membership h3 {
+        font-size: 22px;
+    }
+
+    .membership p {
+        font-size: 18px;
+    }
+
+    .join-btn {
+        display: inline-block;
+        background-color: #f40;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .join-btn:hover {
+        background-color: #f40;
+    }
+
+    .contact-form {
+        display: inline-block;
+        text-align: left;
+        margin-top: 30px;
+        width: 50%;
+    }
+
+    .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .contact-form input[type=submit] {
+        width: 100%;
+        background-color: #f40;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .contact-form input[type=submit]:hover {
+        background-color: #f40;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 30px;
+        background-color: #f40;
+        color: white;
+        font-size: 14px;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+    .footer .icon {
+        font-size: 24px;
+        margin: 0 5px;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        height: 200px;
+        background-color: #ccc;
+        margin: 20px 0;
+    }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        Rockclimbers Association of North Queensland (RANQ)
+        <br>
+        <small>Formerly known as Townsville and JCU Rockclimbing Club</small>
+        </div>
+        
+        <div class="content">
+            <h2>Welcome to RANQ!</h2>
+            <p>Join our community of passionate rock climbers in North Queensland. Explore the great outdoors and challenge yourself with our climbing adventures. No experience? No worries! Our friendly members and experienced climbers will guide you every step of the way. Plus, with our affordable membership options, you can enjoy unlimited trips and gear provided!</p>
+
+            <div class="membership">
+                <h3>3-Month Membership</h3>
+                <p>Only $40</p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+        
+            <div class="membership">
+                <h3>12-Month Membership</h3>
+                <p>Only $120</p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+        
+            <div class="image-placeholder"></div>
+        
+            <h2>Be Adventurous</h2>
+            <p>To participate in the sport of rock climbing, you don't have to be a super athlete. It is more a sport of grace and balance rather than one of strength. What is the allure of rock climbing anyway? You will usually come away from an encounter with ripped hands and various scabby body parts and there will be times where you will be scared out of your wits. For many people it is about exploring the natural world around you and finding the strength and perseverance buried deep inside of you.</p>
+                
+            <h2>Successfully accomplishing a sport route</h2>
+            <p>How do you get started in the sport of rock climbing? You don't need to be young or overly fit. Many people begin climbing later in life and there are excellent climbers of all ages. Climbing is not only about strength either. There have been many men who have been humbled by a graceful female, and the apparent ease with which she clambers over the rocks. Rock climbing is mostly about balance and knowing your body, and how to reposition it in space. You have to be creative when you are rock climbing because you have to adapt to what the rock you are climbing has to offer you. Your legs and feet are your most important tools for getting you up, though your upper body gets a fairly good work out as well.</p>
+        
+            BE ADVENTUROUS
+            Rock climbing is a sport in which participants climb up, down or across natural rock formations or artificial rock walls. The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling. Rock climbing is a physically and mentally demanding sport, one that often tests.
+
+            Best quality moderate routes
+            To participate in the sport of rock climbing, you don't have to be a super athlete. It is more a sport of grace and balance rather than one of strength. What is the allure of rock climbing anyway? You will usually come away from an encounter with ripped hands and various scabby body parts and there will be times where you will be scared out of your wits. For many people it is about exploring the natural world around you and finding the strength and perseverance buried deep inside of you. <b>Successfully accomplishing a sport route</b> How do you get started in the sport of rock climbing? You don't need to be young or overly fit. Many people begin climbing later in life and there are excellent climbers of all ages. Climbing is not only about strength either. There have been many men who have been humbled by a graceful female, and the apparent ease with which she clambers over the rocks. Rock climbing is mostly about balance and knowing your body, and how to reposition it in space. You have to be creative when you are rock climbing because you have to adapt to what the rock you are climbing has to offer you. Your legs and feet are your most important tools for getting you up, though your upper body gets a fairly good work out as well.
+            
+            "The club makes it easy to get start with rock climbing" 
+            - Luen Warneke
+
+            <div class="image-placeholder"></div>
+
+            <p>We'd love to get in touch with you and hear your ideas and questions. We strive to grow and improve constantly, and your feedback is valuable for us.</p>
+            <p>You can also use the form below for any inquiries about rock climbing in Townsville. Don’t be shy, drop us a line!</p>
+            <h3>Location</h3>
+            <p>Our clubhouse is located at<br>
+            193-197 Nathan St, Cranbrook QLD 4814 Australia<br>
+            and is the starting point for most of our trips</p>
+            <div id="map"></div>
+            <script>
+                const locationCoordinates = [-19.306807377613712, 146.76011575297682];
+                const map = L.map('map').setView(locationCoordinates, 15);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+                L.marker(locationCoordinates).addTo(map)
+                    .bindPopup('RANQ')
+                    .openPopup();
+            </script>
+        
+            <h2>Contact Us</h2>
+            <p>Get in touch with us via our <a href="https://www.facebook.com/groups/jcu.rockclimbing/" target="_blank">Facebook Group</a> or email us at <a href="mailto:rockclimbersassociationnq@gmail.com">rockclimbersassociationnq@gmail.com</a>.</p>
+            <!--
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            -->
+        </div>
+        
+        <div class="footer">
+            Connect with us on <a href="https://www.facebook.com/groups/jcu.rockclimbing/" target="_blank"><i class="fab fa-facebook-f icon"></i>Facebook Group</a>, <a href="https://www.facebook.com/townsvillerockclimbingclub/" target="_blank"><i class="fab fa-facebook-f icon"></i>Facebook Page</a> and <a href="https://www.instagram.com/farnorthclimbing/" target="_blank"><i class="fab fa-instagram icon"></i>Instagram</a>!
+        </div>
+    </body>
+    </html>        
